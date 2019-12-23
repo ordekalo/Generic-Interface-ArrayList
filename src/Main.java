@@ -33,21 +33,17 @@ public class Main {
                 String name = scanner.next();
                 System.out.print("Please enter avg: ");
                 float avg = scanner.nextFloat();
-                Course<String> course = new Course<>(name, avg);
-                courseArrayList.add(course);
+                courseArrayList.add(new Course<>(name, avg));
 
             } else {
                 System.out.print("Please enter id: ");
                 int id = scanner.nextInt();
                 System.out.print("Please enter avg: ");
                 float avg = scanner.nextFloat();
-                Course<Integer> course = new Course<>(id, avg);
-                courseArrayList.add(course);
+                courseArrayList.add(new Course<>(id, avg));
             }
             System.out.println();
-
         }
-
         return courseArrayList;
     }
 
