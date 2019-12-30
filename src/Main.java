@@ -58,7 +58,9 @@ public class Main {
     static Course<?>[] fromArrayListToArray(ArrayList<Course<?>> arrayList) {
         Course<?>[] courses = new Course[arrayList.size()];
         for (int i = 0; i < arrayList.size(); i++) {
-            courses[i] = arrayList.get(i);
+            
+            courses[i] = new Course<>(arrayList.get(i).getIdOrName(), arrayList.get(i).getAvg());
+
         }
         return courses;
     }
