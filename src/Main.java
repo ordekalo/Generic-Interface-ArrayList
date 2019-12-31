@@ -13,7 +13,7 @@ public class Main {
         ArrayList<Course<?>> courses_array_list = insert(scanner, amount, selection);
         print(courses_array_list);
         scanner.close();
-        Course[] courses_list = fromArrayListToArray(courses_array_list);
+        Course<?>[] courses_list = fromArrayListToArray(courses_array_list);
         System.out.println("All courses in 'regular' array:");
         print(courses_list);
 
