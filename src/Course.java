@@ -2,6 +2,14 @@ public class Course<E> implements Comparable<Course<E>> {
     private E idOrName;
     private float avg;
 
+    public E getIdOrName() {
+        return idOrName;
+    }
+
+    public float getAvg() {
+        return avg;
+    }
+
     @Override
     public String toString() {
         return "(" + idOrName + ", " + avg + ')';
