@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -16,9 +17,8 @@ public class Main {
         System.out.println("All courses in 'regular' array:");
         print(courses_list);
 
-//        TODO
-//        Arrays.sort(courses_list);
-//        print(courses_list);
+        Arrays.sort(courses_list);
+        print(courses_list);
 
         System.out.println("The 'regular' array of courses, after my sorting method:");
         bubbleSort(courses_list);
@@ -82,7 +82,7 @@ public class Main {
         int length = values.length;
         for (int i = 1; i < length; i++) {
             for (int j = 0; j < length - i; j++) {
-                if (values[j + 1].compareTo(values[j]) > 0) {
+                if (values[j + 1].compareTo(values[j]) < 0) {
                     swap(values, j + 1, j);
                 }
             }
